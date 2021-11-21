@@ -1,0 +1,11 @@
+body {
+
+    color: #0d0ac9;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.jumbotron {
+    background-image: url("NavelBacteria.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
