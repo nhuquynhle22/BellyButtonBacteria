@@ -100,7 +100,7 @@ function buildCharts(sample) {
     var barData = {
       x: slicedSampleValues,
       y: yticks,
-      text: hoverText,
+      text: slicedOtuLabels,
       type: "bar",
       orientation: "h"
     };
@@ -180,11 +180,14 @@ function buildCharts(sample) {
     ];
     
     // Deliverable 3 - 5. Create the layout for the gauge chart.
-    var gaugeLayout = { 
-      margin: { t: 0, b: 0 }
+    var gaugeLayout = {
+      width: 400,
+      height: 300,
+      margin: { t: 100, r: 25, l: 25, b: 25 },
+      font: { color: "black", family: "Arial" }
     };
 
     // Deliverable 3 - 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot('gauge', gaugeData, gaugeLayout);
   });
-} 
+}
